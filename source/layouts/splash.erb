@@ -11,20 +11,36 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 
     <%= stylesheet_link_tag :all %>
+    <style>
+      footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #D34C3F;
+      }
+      footer a {
+        color: white;
+      }
+      .splash-content {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      body, html {
+        height: 100%;
+      }
+      body {
+        background-color: #FFBF51;
+      }
+    </style>
   </head>
 
   <body class="<%= page_classes %>">
-    <div class="wrapper">
-      <header class="flex-header">
-        <a href="/" class="logo">
-          <img src="/images/army_bake_sale.gif" alt="armybakesale.com" width="320" height="38">
-        </a>
-        <img src="/images/slogan_top.gif" alt="exporting democracy and delicious baked goods since 2003" width="492" height="47" class="slogan">
-      </header>
-      <%= partial "nav" %>
-      <%= yield %>
-      <%= partial "footer" %>
-    </div>
+    <%= yield %>    
+    <%= partial "footer" %>
     <%= javascript_include_tag :all %>
   </body>
 </html>

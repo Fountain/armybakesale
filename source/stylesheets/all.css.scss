@@ -68,11 +68,13 @@ h1, h2 {
 .slogan {
   margin-left: auto;
 }
-.columns {
-  display: flex;
-}
+// .columns {
+//   display: flex;
+// }
 .sidebar {
   padding: .5em;
+  display: flex;
+  flex-direction: column;
 }
 .star {
   font-size: 110%;
@@ -117,3 +119,46 @@ footer {
     padding: 0 .5em;
   }
 }
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* We tell all items to be 100% width */
+.flex-header, main, .footer {
+  flex: 1 100%;
+}
+
+/* Small screens */
+@media all and (max-width: 599px) {
+  /* We tell both sidebars to share a row */
+  // .aside { flex: 1 auto; }
+  #nav-truck {
+    display: none;
+  }
+  .nav { order: 0; }
+  main    { order: 1; }
+  .sidebar { order: 2; }
+  .footer  { order: 3; }
+}
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  /* We tell both sidebars to share a row */
+  // .aside { flex: 1 auto; }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+  main { flex: 2 0px; }
+  .nav { order: 1; }
+  main    { order: 2; }
+  .sidebar { order: 3; }
+  .footer  { order: 4; }
+}
+
+

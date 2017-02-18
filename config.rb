@@ -4,6 +4,8 @@ activate :livereload
 # Page options, layouts, aliases and proxies
 ###
 
+page "/404.html", layout: "splash"
+
 # Per-page layout changes:
 #
 # With no layout
