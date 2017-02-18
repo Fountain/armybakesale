@@ -1,0 +1,285 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>armybakesale.com - exporting democracy and baked goods since 2003</title>
+<link href="splash_style.css" rel="stylesheet" type="text/css">
+</head>
+<script language="JavaScript" type="text/javascript">
+
+function parser (input) {
+	if (input == undefined) {
+	input = 0;
+	}
+	//val = document.form1.total_price.value;
+	document.form1.total_price.value = parseInt(document.form1.cookie_subtotal.value)+parseInt(document.form1.bev_subtotal.value)+parseInt(document.form1.sundry_subtotal.value)+input;
+}
+function liar(){
+if (document.form1.email.value == "") {
+alert ("Please enter a valid email address.  Do not attempt to decieve the United States Army.")
+} else {alert ("Thank's your order has been processed. Thank you for supporting ARMYBAKESALE.com and America.")}
+}
+function cookieparser () {
+	val = document.form1.cookie_subtotal.value;
+	valone=parseInt(document.form1.mac_quant.value)*parseInt(document.form1.macaroons.value);
+	valtwo=parseInt(document.form1.clus_quant.value)*parseInt(document.form1.clusters.value);
+	valthree=parseInt(document.form1.mint_quant.value)*parseInt(document.form1.governmints.value);
+	valfour=parseInt(document.form1.infantreat_quant.value)*parseInt(document.form1.infantreats.value);
+	valfive=parseInt(document.form1.moab_quant.value)*parseInt(document.form1.moab.value);
+	valsix=parseInt(document.form1.krispie_quant.value)*parseInt(document.form1.kellogg.value);
+	document.form1.cookie_subtotal.value = valtwo+valthree+valfour+valfive+valsix+valone;
+}
+function bevparser () {
+	valone=parseInt(document.form1.lemonade_quant.value)*parseInt(document.form1.lemonade.value);
+	valtwo=parseInt(document.form1.milk_quant.value)*parseInt(document.form1.milk.value);
+	valthree=parseInt(document.form1.grapalm_quant.value)*parseInt(document.form1.grapalm.value);
+	document.form1.bev_subtotal.value = valtwo+valthree+valone;
+}
+function sundryparser () {
+	valone=parseInt(document.form1.betty_quant.value)*parseInt(document.form1.betty.value);
+	valtwo=parseInt(document.form1.yellowcake_quant.value)*parseInt(document.form1.cake.value);
+	valthree=parseInt(document.form1.blintz_quant.value)*parseInt(document.form1.cupcake.value);
+	valfour=parseInt(document.form1.cupcake_quant.value)*parseInt(document.form1.fudge.value);
+	document.form1.sundry_subtotal.value = valtwo+valthree+valfour+valone;
+}
+<!--
+
+/* 
+Suzanne's popUp code and full explanation
+Please redistribute wildly and include this comment.
+
+Good references:
+http://www.irt.org/articles/js128/index.htm - primer
+http://www.irt.org/articles/js205/index.htm - almost complete control of pop up windows
+*/
+
+// this variable names the current window (for using the popUp as a remote)
+
+window.name = "currentWindowName";
+
+// this function opens the pop-up window
+
+var newWin;
+
+function popUp(page, name, details) {
+newWin=window.open(page, name, details);
+newWin.focus();
+return false;
+}
+-->
+
+</script>
+<body bgcolor="#FFCE76" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td colspan="5" valign="top"><table width="100%" height="47" border="0" cellspacing="0" cellpadding="0"><tr><td width="269" height="47" align="left" valign="middle" bgcolor="#FFCE76"><a href="index.html"><img src="images/army_bake_sale.gif" alt="" width="320" height="38" border="0"></a></td><td height="47" align="right" valign="top" bgcolor="#FFCE76"><img src="images/slogan_top.gif" alt="" width="492" height="47" border="0"></td>
+</tr>
+</table></td></tr>
+	<tr><td valign="top" bgcolor="#FFFFFF"><a href="index.html"><img src="nav/home.gif" width="149" height="23" alt="" border="0"></a><br><a href="tradition.html"><img src="nav/tradition.gif" width="149" height="44" alt="" border="0"></a><br>
+			<!-- <a href="treats.html"><img src="nav/treats.gif" width="149" height="23" alt="" border="0"></a><br> -->
+			<a href="cookies.html"><img src="nav/cookies.gif" width="149" height="18" alt="" border="0"></a><br>
+			<a href="sundries.html"><img src="nav/sundries.gif" width="149" height="18" alt="" border="0"></a><br>
+			<a href="bevs.html"><img src="nav/beverages.gif" width="149" height="18" alt="" border="0"></a><br>
+			
+			<a href="merch.html"><img src="nav/merch.gif" width="149" height="23" alt="" border="0"></a><br>
+			<a href="faq.html"><img src="nav/faq.gif" width="150" height="25" alt="" border="0"></a><br>
+			<a href="mailbag.html"><img src="nav/mailbag.gif" width="149" height="23" alt="" border="0"></a><br>
+			<a href="order.html"><img src="nav/order_red.gif" alt="" width="149" height="23" border="0"></a><br>
+			<img src="images/front_truck.gif" alt="" width="149" height="196" border="0">
+			</td>
+		<td width="1" bgcolor="#818181"><img src="images/spacer.gif" width="1" height="1" alt="" border="0"></td>
+		<td valign="top" class="content" bgcolor="#E7E7E7">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#D34C3F"><tr><td align="left"><img src="images/order.gif" alt="" width="186" height="21" border="0"></td><td align="right"><img src="images/double_star.gif" width="44" height="20" alt="" border="0"></td></tr></table>
+<form action="orderMail.asp" method="post" name="form1" id="form1">
+<p>Unlike other organizations which sell cookies, <b>ARMYBAKESALE.com</b> doesn't rely on inexperienced young civilians going door-to-door. Harness the power of the United States military and have your order rapidly deployed overseas!</p>
+
+
+<p><b>Note:</b> <br>Please be careful to provide accurate shipping information. Relying on the CIA to provide accurate information for the military is time-consuming, expensive and often inaccurate. Don't let your order be shipped to someone who doesn't deserve it.</p>
+your name:<br>
+<input type="text" name="realname" id="realname" size="20"><br><br>
+email address:<br>
+<input type="text" name="fromEmail" id="fromEmail" size="20"><br><br>
+<p>Thanks to the Department of Homeland Security and the Office of Total
+Information Awareness, ordering is easier than ever!</p>
+
+
+<p>There’s no need to provide your credit card number or other financial
+information, because in accordance with the USA PATRIOT Act, the Federal
+Government and its coalition of freedom-loving corporate allies already have
+this information on file!</p>
+<table><tr><td valign="top"><table>
+<tr><td><b>Cookies</b></td></tr>
+<tr><td>Product</td><td></td><td>quantity</td><td>unit</td><td>subtotal</td></tr>
+	
+	<tr><td><img src="order/clusters.gif" width="45" height="45" border="0"></td><td>peanut clusters<br></td>
+	<td><input type="text" name="clus_quant" size="2" value=1 onChange="cookieparser();parser()"></td>
+<td>	<select name="clusters" onChange="cookieparser();parser()">
+<option value=0></option>
+<option value="144">gross</option>
+<option value="1728">great gross</option>
+<option value="20536">value pack</option>
+</select></td><td valign="top"><input type="text" name="cookie_subtotal" value="0" size="9" maxlength="9" readonly class="flat" onchange="parser(this.value)"></td></tr>
+<tr><td><img src="order/macaroons.gif" width="45" height="45" border="0"></td><td>macaroons ready to eat<br></td>
+<td><input type="text" name="mac_quant" value="1" size="2" onChange="cookieparser();parser()"></td>
+<td><select name="macaroons" onChange="cookieparser();parser()">
+<option value="0"></option>
+<option value="144">gross</option>
+<option value="1728">great gross</option>
+<option value="20536">value pack</option>
+</select></td></tr>	
+<tr><td><img src="order/mints.gif" width="45" height="45" border="0"></td><td>democratic govern-mints<br></td>
+	<td><input type="text" name="mint_quant" size="2" value=1 onChange="cookieparser();parser()"></td>
+<td>	<select name="governmints" onChange="cookieparser();parser()">
+	<option value=0></option>
+<option value="72">gross</option>
+<option value="864">great gross</option>
+<option value="10000">value pack</option>
+</select></td></tr>
+	<tr><td><img src="order/infantreats.gif" width="45" height="45" border="0"></td><td>infan-treats<br></td>
+	<td><input type="text" name="infantreat_quant" size="2" value=1 onChange="cookieparser();parser()"></td>
+<td>	<select name="infantreats" onChange="cookieparser();parser()">
+	<option value=0></option>
+<option value="12.50">squad</option>
+<option value="55">platoon</option>
+<option value="237.50">company</option>
+<option value="1125">battalion</option>
+<option value="6250">brigade</option>
+<option value="18750">division</option>
+<option value="56250">corps</option>
+<option value="161850">peacekeeping force</option> 
+</select></td></tr>
+	<tr><td><img src="order/moab.gif" width="45" height="45" border="0"></td><td>mother of all brownies<br></td>
+	<td><input type="text" name="moab_quant" size="2" value=1 onChange="cookieparser();parser()"></td>
+<td>	<select  onChange="cookieparser();parser()" name="moab">
+	<option value=0></option>
+<option value="324">gross</option>
+<option value="324">great gross</option>
+<option value="324">value pack</option>
+</select></td></tr>
+	<tr><td><img src="order/krispies.gif" width="45" height="45" border="0"></td><td>kellogg, brown, and root rice krispie treats<br></td>
+<td><input type="text" name="krispie_quant" size="2" value=1 onChange="cookieparser();parser()"></td>
+<td><select name="kellogg" onChange="cookieparser();parser()">
+<option value=0></option>
+<option value="1180 ">gross</option>
+<option value="18165">great gross</option>
+</select></td></tr>
+
+<tr><td><br><b>Sundries</b></td></tr>
+<tr><td>Product</td><td></td><td>quantity</td><td>unit</td><td>subtotal</td></tr>
+
+	<tr><td><img src="order/betty.gif" width="45" height="45" border="0"></td><td>bouncing brown betty<br></td>
+	<td><input type="text" name="betty_quant" size="2" value=1 onChange="sundryparser();parser()" ></td>
+<td>	<select onChange="sundryparser();parser()" name="betty"><option value=0></option>
+<option value="324">gross</option>
+<option value="6174">great gross</option>
+<option value="46254">value pack</option>
+</select></td><td valign="top"><input type="text" name="sundry_subtotal" value="0" size="9" maxlength="9" readonly class="flat"></td></tr>
+	<tr><td><img src="order/yellowcake.gif" width="45" height="45" border="0"></td><td>yellow cake<br></td>
+	<td><input type="text" name="yellowcake_quant" size="2" value=1 onChange="sundryparser();parser()" ></td>
+	<td><select name="cake" onChange="sundryparser(this.options[this.selectedIndex].value*document.form1.betty_quant.value);parser()" >
+<option value=0></option>
+<option value="324">gross</option>
+<option value="6174">great gross</option>
+<option value="46254">value pack</option>
+</select></td></tr>
+	<tr><td><img src="order/blintzes.gif" width="45" height="45" border="0"></td><td>blintz-kreig<br></td>
+	<td><input type="text" name="blintz_quant" size="2" value=1 onChange="sundryparser();parser()" ></td>
+<td>	<select name="blintz" onChange="sundryparser();parser()">
+	<option value=0></option>
+<option value="324">gross</option>
+<option value="6174">great gross</option>
+<option value="46254">value pack</option>
+</select></td></tr>
+	<tr><td><img src="order/cupcakes.gif" width="45" height="45" border="0"></td><td>coalition cupcakes<br></td>
+	<td><input type="text" name="cupcake_quant" size="2" value=1 onChange="sundryparser();parser()"></td>
+	<td><select onChange="sundryparser();parser()" name="cupcake">
+	<option value=0></option>
+	<option value="500">baker's gross</option>
+	<option value="6000">baker's great gross</option>
+	<option value="50000">value pack</option>
+</select></td></tr>
+	<tr><td><img src="order/fudge.gif" width="45" height="45" border="0"></td><td>dark chocolate "stealth" fudge<br></td>
+<td><input type="text" name="fudge_quant" size="2" value=1 onChange="sundryparser();parser()"></td>
+<td><select onChange="sundryparser();parser()" name="fudge">
+<option value=0></option>
+<option value="425000">half-acre foot</option>
+<option value="850000">one-acre foot</option>
+<option value="2000000">hectare</option>
+</select></td></tr>
+
+<tr><td><br><b>Beverages</b></td></tr>
+<tr><td>Product</td><td></td><td>quantity</td><td>unit</td><td>subtotal</td></tr>
+
+	<tr><td><img src="order/grapalm.gif" width="45" height="45" border="0"></td><td>grapalm<br></td>
+	<td><input type="text" name="grapalm_quant" size="2" value=1 onChange="bevparser();parser()" ></td>
+	<td><select onChange="bevparser();parser()" name="grapalm">
+	<option value=0></option>
+	<option value="19.08">55 gallon drum</option>
+</select></td><td width="50" valign="top"><input type="text" name="bev_subtotal" value="0" size="9" maxlength="9" readonly class="flat"></td></tr>
+	<tr><td><img src="order/milk.gif" width="45" height="45" border="0"></td><td>milk<br></td>
+	<td><input type="text" name="milk_quant" size="2" value=1 onChange="bevparser();parser()" ></td>
+<td>	<select name="milk"  onChange="bevparser();parser()">
+	<option value=0></option>
+	<option value="100">gross</option>
+	</select></td>
+	</tr>
+	<tr><td><img src="order/lemonade.gif" width="45" height="45" border="0"></td><td>lemonade<br></td>
+	<td><input type="text" name="lemonade_quant" size="2" value=1 onChange="bevparser();parser()"></td>
+	<td><select name="lemonade"  onChange="bevparser();parser()">
+<option value=0></option>
+<option value="125">55 gallon drum</option>
+</select></td></tr>
+	<tr><td><img src="order/julius.gif" width="45" height="45" border="0"></td><td>orange julius<br></td><td><select name="orange"><option onChange="">discontinued</option>
+</select></td></tr>
+
+</table></td>
+</tr></table>
+
+
+<b>You do not need to enter any other information.  We already have all your identifying information on file.</b><br><br>
+<b>DELIVERY OPTIONS:</b><br>
+
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr><td colspan="2" bgcolor="#FFFFFF"><img src="images/spacer.gif" width="1" height="2" alt="" border="0"></td></tr>
+<tr bgcolor="#FFFFFF"><td valign="middle"><img src="images/convoy.gif" alt="" width="50" height="50" hspace="5" border="1"><br><br></td><td valign="top"><input type="radio" name="delivery" onClick="parser(950)" id="delivery"><b>Standard Delivery</b><br> <font class="tiny">Products are delivered at a time of our choosing, subject to a variety of factors including weather and pockets of resistance<br><br></font></td></tr>
+<tr><td colspan="2"><br></td></tr>
+<tr><td colspan="2" bgcolor="#FFFFFF"><img src="images/spacer.gif" width="1" height="2" alt="" border="0"></td></tr>
+<tr bgcolor="#FFFFFF"><td valign="middle"><img src="images/amphib.gif" alt="" width="50" height="50" hspace="5" border="1"><br><br></td><td valign="top"><input onClick="parser(9000)" type="radio" name="delivery" id="delivery"><b>Amphibious Assault</b><br><br></td></tr>
+
+<tr><td colspan="2"><br></td></tr>
+<tr><td colspan="2" bgcolor="#FFFFFF"><img src="images/spacer.gif" width="1" height="2" alt="" border="0"></td></tr>
+<tr bgcolor="#FFFFFF"><td valign="middle"><img src="images/airdrop.gif" width="50" height="50" alt="" border="1" hspace="5"><br><br></td><td valign="top"><input onClick="parser(14000)" type="radio" name="delivery" id="delivery"><b>Airdrop</b><br> <font class="tiny">You must have access to airstrip and/or flyover rights; not available in Turkey, Jordan, Egypt, France, former Soviet Union; guaranteed delivery within 15 miles of your address.</font></td></tr>
+
+<tr><td colspan="2"><br></td></tr>
+<tr><td colspan="2" bgcolor="#FFFFFF"><img src="images/spacer.gif" width="1" height="2" alt="" border="0"></td></tr>
+<tr bgcolor="#FFFFFF"><td valign="middle"><img src="images/urban.gif" alt="" width="50" height="50" hspace="4" border="1"><br><br></td><td valign="top"><input onClick="parser(21985)" type="radio" name="delivery" id="delivery"><b>Next-Day Tactical Insertion</b><br><font class="tiny">small orders only<br><br></font></td></tr></table><br><input type="checkbox" value="checked" checked> <b>optional:</b> shipping insurance / armed escort<br><br>
+total price<br>
+<input type="text" name="total_price" value="0" size="9" maxlength="9" readonly class="flat"><br>
+<input type="hidden" name="messageSubject" value="armybakesale order mailer">
+<input type="hidden" name="messageBody" value="this will have people's order data when i figure out how to do that.">
+<input type="hidden" name="toEmail" value="patriot@armybakesale.com, peter@overtype.com, redsox.nation@verizon.net">
+<input type="submit" name="submit" value="submit" onClick="liar()"><br><br>
+</form>
+<font class="tiny">
+<p>* ARMYBAKESALE.com and its couriers can not be held liable for damage
+associated with misdirected airdrops, inaccurate GPS information, or
+incidental property seized at time of delivery</p>
+<p>** Certain delivery times may become classified during transit.</p>
+<p>*** At time of purchase you will be given a unique tracking number. This
+number will be used to track you. </p>
+<p>**** At this time all shipments to Cuba must be handled through an authorized
+re-seller.</p></font>
+
+</td>
+		<td width="1" bgcolor="#818181"><img src="images/spacer.gif" width="1" height="1" alt="" border="0"></td>
+		<td valign="top" bgcolor="#FFFFFF"><br><img src="factoids/sam.gif" alt="" width="277" height="310" hspace="4" border="1"><br><br>
+<div align="center"><img src="factoids/rotary_die.gif" alt="" width="277" height="158" border="1"></div>
+
+<br><br><br><br><br><br><br><br><br><br></td>
+</tr>
+<tr><td colspan="4" align="center" bgcolor="#FFCE76"><a class="tiny2" href="index.html">home</a>&nbsp;&nbsp;<a class="tiny2" href="cookies.html">cookies</a>&nbsp;&nbsp;<a class="tiny2" href="bevs.html">beverages</a>&nbsp;&nbsp;<a class="tiny2" href="sundries.html">sundries</a>&nbsp;&nbsp;<a class="tiny2" href="merch.html">merchandise</a>&nbsp;&nbsp;<a class="tiny2" href="mailbag.html">mailbag</a>&nbsp;&nbsp;<a class="tiny2" href="tradition.html">tradition</a>&nbsp;&nbsp;<a class="tiny2" href="faq.html">FAQ</a>&nbsp;&nbsp;<a class="tiny2" href="order.html">order</a><br><a class="tiny2" href="privacypolicy.html" onClick="return popUp('privacypolicy.html', 'imageName', 'width=502,height=454,resizable=no,scrollbars=no')">privacy policy</a>&nbsp;&nbsp;<a class="tiny2" href="disclaimer.html"  onClick="return popUp('disclaimer.html', 'imageName', 'width=502,height=454,resizable=no,scrollbars=no')">disclaimer</a> <font class=tiny2>&copy;2004 hivemind prod.</font></td><td align="right"><a href="http://www.sempermental.com"><img src="images/powered_by_smp.gif" width="103" height="17" alt="" border="0"></a></td></tr>
+</table>
+
+</body>
+</html>

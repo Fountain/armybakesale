@@ -1,0 +1,40 @@
+td {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color: #000000;
+	}
+.content {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color: #000000;
+	padding-right : 2;
+	padding-left : 2;
+	padding : 3 2 2;
+}
+a {
+	color: #4A692A;
+	font-weight: bold;
+}
+.red {
+	color: #990000;
+	font-weight: bold;
+}
+b {
+	color: #000000;
+}
+.tiny {
+	font-size: 9px;
+}
+.border {
+	border : 1px #DCDCDC;
+}
+
+.tiny2 {
+	font-size: 9px;
+	font-weight: normal;
+}
+select {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color: #000000;
+	}
