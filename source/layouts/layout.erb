@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Armybakesale" %></title>
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+
+    <%= stylesheet_link_tag :all %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <header>
+      <a href="index.html" class="logo">
+        <img src="images/army_bake_sale.gif" alt="armybakesale.com" width="320" height="38">
+      </a>
+      <img src="images/slogan_top.gif" alt="exporting democracy and delicious baked goods since 2003" width="492" height="47" class="slogan">
+    </header>
+    <section class="columns">
+      <%= partial "nav" %>
+      <%= yield %>
+    </section>
+    
+    <%= partial "footer" %>
+    <%= javascript_include_tag :all %>
+  </body>
+</html>
