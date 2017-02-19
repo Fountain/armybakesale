@@ -1,0 +1,134 @@
+- 
+  name: BG-77150 Macaroons Ready to Eat
+  description: "Standard issue at all bake sales, the MRE is a treat your family can enjoy for years to come. Plus, they're chemically engineered to have a 200-year shelf life, so you can buy in bulk and stockpile for an emergency."
+  note_title: FUN FACT!
+  note: Each MRE comes with a water-activated exothermic chemical heater which raises the temperature of the macaroons by 100 F in just 12 minutes, so you can get that fresh-out-of-the-oven feeling when you're on the go! 
+  front: /images/cookies/macaroons.gif
+  back: /images/crates/crate6.gif
+  rates:
+    - 
+      quantity: Gross (144 units)
+      price: $324
+    - 
+      quantity: Great gross (1,728 units) 
+      price: $6,174
+    - 
+      quantity: Balanced Budget Value Pack (20,736 units) 
+      price: $46,250 (you save $406!)
+-
+  name: CC-151 Peanut Clusters
+  description: "Parents know there's no better way to disperse a mob of hungry children than with the taste-tastic CC-151 Peanut Clusters. Each one delivers hundreds of high-yield flavor explosions. Available modification: CC-151A, Caramel Nut Clusters."
+  front: /images/cookies/peanut_cluster.gif
+  back: /images/crates/crate8.gif
+  note_title: HELP US MEET OUR GOAL!
+  note: Your United States Army needs to raise $2.1 million for a replacement engine for each Chinook MK2/A2 transport helicopter. That means we need to sell just over 1,215 great gross of CC-151 Peanut Clusters (or only 102 "Balanced Budget Value Packs"). So eat up and support our troops, because that engine's not going to buy itself. 
+  rates:
+    - 
+      quantity: Gross (144 units)
+      price: $144
+    - 
+      quantity: Great gross (1,728 units) 
+      price: $1,728
+    - 
+      quantity: Balanced Budget Value Pack (20,736 units) 
+      price: $20,536 (you save $200!)
+-
+  name: CC-2064 Democratic Govern-mints
+  description: "Sorry, Democratic Govern-Mints are on back order and are taking much longer to arrive than we'd expected. Until then, please accept a motley assortment of our popular INTERIM GOVERN-MINTS. When the regular mints arrive (scheduled delivery: June '04 but no ironclad guarantees), we'll replace the Interim Mints with a minimum of unrest."
+  front: /images/cookies/mints_image.gif
+  back: /images/crates/crate7.gif
+  note_title: HELP US MEET OUR GOAL!
+  note: When you think Interim Govern-Mints, think snipers! This month, proceeds from Interim Govern-Mints go towards equipping the Special Forces with XM107 Long Range Sniper Rifles with PVS-10 base. Each XM107 LRSR/M24 SW1 costs $1,180, so that means that every 16.4 gross of Govern-Mints you order gives another freedom loving sniper the tools he needs to do his job.
+  rates:
+    -
+      quantity: CC-002 Democratic Govern-mints
+      price:
+    - 
+      quantity: Gross (144 units)
+      price: "[out of stock]"
+    - 
+      quantity: Great gross (1,728 units) 
+      price: "[out of stock]"
+    - 
+      quantity: Balanced Budget Value Pack (20,736 units) 
+      price: "[out of stock]"
+    - 
+      quantity:
+      price:
+    -
+      quantity: CC-001 Interim Govern-mints
+      price:
+    - 
+      quantity: Gross (144 units)
+      price: $72
+    - 
+      quantity: Great gross (1,728 units) 
+      price: $864
+    - 
+      quantity: Balanced Budget Value Pack (20,736 units) 
+      price: $10,000 (you save $368!)
+-
+  name: CC-50126 Infan-treats
+  description: An army of fun!
+  front: /images/cookies/infantreats.gif
+  back: /images/crates/crate9.gif
+  note_title: 
+  note: 
+  rates:
+    - 
+      quantity: Squad (10)
+      price: $12.50
+    - 
+      quantity: Platoon (44)
+      price: $55.00
+    - 
+      quantity: Company (190)
+      price: $237.50
+    - 
+      quantity: Battalion (900)
+      price: $1,125
+    - 
+      quantity: Brigade (5,000)
+      price: $6,250
+    - 
+      quantity: Division (15,000)
+      price: $18,750
+    - 
+      quantity: Corps (45,000)
+      price: $56,250
+    - 
+      quantity: Peacekeeping Force (130,000)
+      price: $161,850 (you save $700!)
+-
+  name: BG-62339-10 Mother of All Brownies (M.O.A.B)
+  description: "Shock and awe your family and friends with the highly enriched sugar payload of the M.O.A.B. Stage a decapitation strike on hunger!"
+  front: /images/cookies/moab.gif
+  back: /images/crates/crate13.gif
+  note: We built the largest ever mass-produced brownie ever made. Just because we could.
+  rates:
+    - 
+      quantity: Gross (144 units)
+      price: $144
+    - 
+      quantity: Great gross (1,728 units) 
+      price: $1,728
+    - 
+      quantity: Balanced Budget Value Pack (20,736 units) 
+      price: $20,536 (you save $200!)
+-
+  name: CC-4310 Kellogg, Brown & Root Rice Krispie Treats
+  description: Marshmallows + Rice Krispies = Victory!
+  front: /images/cookies/rice_crispies.gif
+  back: /images/crates/crate12.gif
+  note_title: DID YOU KNOW?
+  note: "The recipe for Kellogg, Brown and Root Rice Krispie Treats comes from none other than Second Lady Lynn Cheney! KBR Rice Krispie Treats are provided to ARMYBAKESALE.com through an exclusive, no-bid contract with Marshmallow Burton Confectioners."
+  rates:
+    - 
+      quantity: Gross (144 units)
+      price: $1,180
+    - 
+      quantity: Great gross (1,728 units) 
+      price: $18,165
+    - 
+      quantity: Balanced Budget Value Pack
+      price: not available for KBR products

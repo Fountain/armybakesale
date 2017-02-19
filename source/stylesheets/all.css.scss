@@ -6,6 +6,8 @@ $gray: #E7E7E7;
 @charset "utf-8";
 @import "normalize";
 @import "modal";
+@import "product";
+@import "flip_animation";
 
 body {
   font-family: Verdana, Helvetica, Arial, sans-serif;
@@ -112,6 +114,20 @@ h1 {
   margin-top: 0px;
 }
 
+.form-group {
+  margin-bottom: 1em;
+  label {
+    margin-bottom: .35em;
+    text-transform: uppercase;
+    font-size: .75em;
+    display: block;
+  }
+  textarea, input {
+    border: none;
+    padding: .25em;
+  }
+}
+
 main {
   background-color: $gray;
   padding: 1em;
@@ -135,6 +151,10 @@ main {
 
 .border {
   border: 2px solid #6d6d6e;
+}
+
+.disclosures {
+  font-size: .65em;
 }
 
 .choices {
@@ -187,35 +207,6 @@ footer {
   flex: 1 100%;
 }
 
-/* Small screens */
-@media all and (max-width: 599px) {
-  /* We tell both sidebars to share a row */
-  // .aside { flex: 1 auto; }
-  #nav-truck {
-    display: none;
-  }
-  .nav { order: 0; }
-  main    { order: 1; }
-  .sidebar { order: 2; }
-  .footer  { order: 3; }
-}
-
-/* Medium screens */
-@media all and (min-width: 600px) {
-  /* We tell both sidebars to share a row */
-  // .aside { flex: 1 auto; }
-}
-
-/* Large screens */
-@media all and (min-width: 800px) {
-  /* We invert order of first sidebar and main
-   * And tell the main element to take twice as much width as the other two sidebars 
-   */
-  main { flex: 2 0px; }
-  .nav { order: 1; }
-  main    { order: 2; }
-  .sidebar { order: 3; }
-  .footer  { order: 4; }
-}
+@import "media_queries";
 
 

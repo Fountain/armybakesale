@@ -1,7 +1,11 @@
 <main>
   <h1>Beverages<span class="star header">★ ★</span></h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore commodi, voluptatem. Nisi officiis voluptatum obcaecati vel eum cupiditate minus, quod deleniti! Ut delectus, voluptate dicta sapiente facere velit culpa laboriosam?</p>
+  <% data.beverages.each_with_index do |beverage, index| %>
+    <%= partial('product', locals: { product: beverage, index: index }) %>
+  <% end %>
 </main>
 <aside class="aside sidebar">
-  
+  <img src="/images/factoids/staff_spotlight.gif" alt="" width="277" height="210">
+  <br>
+  <img src="/images/factoids/new_fighters.gif" alt="" width="275" class="border">
 </aside>

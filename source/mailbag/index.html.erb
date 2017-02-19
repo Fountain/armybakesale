@@ -1,3 +1,30 @@
 <main>
   <h1>Mailbag</h1>
+  <p>Customer feedback, as required by the FOIA. </p>
+  <p><strong>"I purchased my Stealth Fudge over three months ago and it hasn't arrived yet and I was wonder- oh never mind here it is."</strong>
+  <p>– Thomas L. Fogelnest, Minneapolis, Minnisota</p>
+  <hr>
+  <p>Submit your comments below.</p>
+  <form action="/mailbag/thanks" method="post" name="mailer" id="mailer">
+    <div class="form-group">
+      <label for="name">Your name</label>
+      <input type="text" name="name" id="name" size="40" required>
+    </div>  
+    <div class="form-group">
+      <label for="email">Your email</label>
+      <input type="text" name="email" id="email" size="40" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Comments</label>
+      <textarea cols="40" rows="7" name="message" id="message" required></textarea>
+    </div>
+    <div class="form-group">
+      <input type="submit" name="submit" value="submit">
+    </div>
+  </form>
 </main>
+<aside class="aside sidebar">
+  <img src="/images/factoids/special.jpg" alt="" width="275" hspace="4" border="1">
+  <br>
+  <img src="/images/factoids/new_war.gif" alt="" width="275" height="173">
+</aside>
