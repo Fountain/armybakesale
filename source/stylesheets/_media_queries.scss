@@ -20,6 +20,16 @@
     width: 100%;
     margin-bottom: 1em;
   }
+  textarea, input[type="text"] {
+    width: 100%;
+    margin-right: 15px;
+  }
+  .aside {
+    width: 100%;
+  }
+  .aside img {
+    margin: 0 auto;
+  }
 }
 
 /* Medium screens */
