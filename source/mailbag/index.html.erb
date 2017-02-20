@@ -5,7 +5,7 @@
   <p>– Thomas L. Fogelnest, Minneapolis, Minnisota</p>
   <hr>
   <p>Submit your comments below.</p>
-  <form action="/mailbag/thanks" method="post" name="mailer" id="mailer">
+  <form action="/mailbag/thanks" method="get" name="mailer" id="mailer" onsubmit="location.href = '/mailbag/thanks'; return false">
     <div class="form-group">
       <label for="name">Your name</label>
       <input type="text" name="name" id="name" size="40" required>
